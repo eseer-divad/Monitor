@@ -1,102 +1,84 @@
-
-/* Sudo-class selector ":root" */
-:root {
-    font-size: 14px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-    /* CSS Variables for palette. Global. */
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+html {
+    font-family: helvetica, serif;
+    color: white;
 }
-
-body {
-    color: black;
-    background-color: white;
+html, body {
     margin: 0;
-    padding: 0;
-}
-
-/* Targets Browser Scrollbar */
-body::-webkit-scrollbar {
-    /* 3.5px */
-    width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-    background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #6649b8;
-}
-
-main {
-    /* Unit relative to font size in root. 14 * 5 = 70 pixels. */
-    margin-left: 5rem;
-}
-
-.navbar {
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
-    background: var(--bg-primary);
-    transition: width 200ms ease;
-}
-
-.navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-item {
     width: 100%;
+    background-color: darkslategray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
 }
-
-.nav-item:last-child {
-    margin-top: auto;
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
 }
-
-.nav-link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: var(--text-primary);
+h4 {
+    font-weight: 100;
+    font-size: 28px;
+    margin: 0;
+    padding: 8em 0 1em 0;
+}
+.btn_one {
     text-decoration: none;
+    color: white;
+    font-weight: 100;
+    border: 1px #fbbc05 solid;
+    padding: 1em 3em;
+    border-radius: 100px;   
 }
 
-.link-text {
-    display: none;
-    margin-left: 1rem;
+.nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
 }
-
-.nav-link svg {
-    min-width: 2rem;
-    margin: 0 1.5rem;
-}
-
-.navbar:hover {
-    width: 16rem;
-}
-
-.navbar:hover .link-text {
+.nav {
+    width: 30px;
     display: block;
+    margin: 1em 0 0 1em;
+    
+}
+.one {
+    width: 30px;
+}
+.two {
+    width: 20px;
+}
+.three {
+    width: 25px;
 }
 
-.fa-primary {
-    color: #6649b8;
+.nav:hover div {
+    width: 30px;
 }
 
-.fa-secondary {
-    color: violet;
-}
 
-.fa-primary,
-.fa-secondary {
-    transition: var(--transition-speed);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
